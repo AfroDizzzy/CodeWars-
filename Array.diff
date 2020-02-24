@@ -1,0 +1,21 @@
+/*
+Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+It should remove all values from list a, which are present in list b.
+
+arrayDiff([1,2],[1]) == [2]
+If a value is present in b, all of its occurrences must be removed from the other:
+
+arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+*/
+
+
+
+//solution
+//This function takes in two arrays. The filter function sorts through an array based on a input test function. The test function here takes each element of a (x) and checks if this element is in b. 
+//By negating the b.includes(x) function we remove all the elements that a and b share, and only include those elements from b that are unique to b. 
+
+function arrayDiff(a, b) {
+  return a.filter( x => !b.includes(x));
+}
