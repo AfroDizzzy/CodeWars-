@@ -1,0 +1,25 @@
+/*
+Complete the solution so that the function will break up camel casing, using a space between words.
+
+Example
+solution("camelCasing")  ==  "camel Casing"
+
+*/
+
+//my solution
+// looks through the string to find the uppercase letter and puts a space before it. 
+
+function solution(string) {
+  let newS = "";
+  
+  for (let i = 0; i < string.length; i ++) {
+    if (string.charAt(i) == string.charAt(i).toUpperCase()) {
+      newS += " " + string.charAt(i); 
+    } else {
+      newS += string[i];
+    }
+  }
+  
+  return newS; 
+    
+}
