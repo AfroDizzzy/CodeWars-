@@ -1,0 +1,18 @@
+\\https://www.codewars.com/kata/5966e33c4e686b508700002d/train/javascript
+
+function sumStr(a,b) {
+  numa = parseInt(a, 10);
+  numb = parseInt(b, 10);
+  nana = isNaN(numa);
+  nanb = isNaN(numb);
+  if (nana && nanb){
+    return "0";
+  }
+  if (nana){
+    return "" + numb;
+  } 
+  if (nanb){
+    return "" + numa;
+  } 
+  return "" + (numa +numb);
+}
