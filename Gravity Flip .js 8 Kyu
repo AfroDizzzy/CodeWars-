@@ -1,0 +1,10 @@
+\\see https://www.codewars.com/kata/5f70c883e10f9e0001c89673/train/javascript
+
+const flip=(d, a)=>{
+  if (d == "R"){
+    return a.sort((c, d) => c - d);
+  }
+  if (d =="L"){
+    return a.sort((c, d) => d - c);
+}
+}
