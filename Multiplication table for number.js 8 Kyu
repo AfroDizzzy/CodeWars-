@@ -1,0 +1,19 @@
+
+\\see here for problem https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce/train/javascript
+
+function multiTable(number) {
+  output = "";
+  for (i = 1; i < 11; i ++){
+    value = i * number;
+    string = '';
+    if (i == 10){
+      string = string + i + " * " + number +" = " + value;
+    } else {
+      string = string = i + " * " + number +" = " + value + "\n";
+    }
+    console.log(string);
+    output = output + string;
+  }
+  console.log(output);
+  return output;
+}
